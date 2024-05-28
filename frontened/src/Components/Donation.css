@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.donation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Background Image */
+.donor-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.donor-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Top Row */
+.top-row {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px; /* Added some top margin for spacing */
+  gap: 20px;
+}
+
+/* Record Box */
+.record-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record-box .heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: maroon;
+  margin-bottom: 20px;
+}
+
+.donor-form input,
+.donor-form button {
+  width: calc(100% - 20px); /* Adjusted for padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.donor-form button {
+  background-color: maroon;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donor-form button:hover {
+  background-color: maroon;
+}
+
+/* Image Container */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Box */
+.description-box {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards Section */
+.megacard {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 30s linear infinite;
+}
+
+.card {
+  flex: 0 0 250px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .image img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.description {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-container {
+width: 90%;
+}
+
+.footer-container {
+  width: 90%;
+  }
